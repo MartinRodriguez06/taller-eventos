@@ -4,5 +4,10 @@ document.addEventListener('DOMContentLoaded', function () {
     divSaludar.addEventListener('click', function () {
       alert('Hola! Soy el div');
     });
+    const botonSaludar = document.querySelector('#saludarBtn');
+  botonSaludar.addEventListener('click', function(event) {
+    alert('Hola!');
+    event.stopPropagation(); // Detener la propagación del evento
+  });
   });
   
